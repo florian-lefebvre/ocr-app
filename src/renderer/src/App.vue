@@ -17,6 +17,11 @@ import HelloWorld from './components/HelloWorld.vue'
     Place static files into the <code>src/renderer/public</code> folder
     <img style="width:90px;" :src="'./images/node.png'" />
   </div>
+  <div class="flex space-x-6 justify-center mb-6">
+    <router-link class="bg-gray-100 font-semibold px-3 py-1 rounded hover:bg-gray-200 transition-colors" to="/" active-class="bg-emerald-500 text-white">Home</router-link>
+    <router-link class="bg-gray-100 font-semibold px-3 py-1 rounded hover:bg-gray-200 transition-colors" to="/about" active-class="bg-emerald-500 text-white">About</router-link>
+  </div>
+  <router-view />
 </template>
 
 <style>
